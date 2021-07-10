@@ -11,7 +11,7 @@ router.get("/user_list", (req, res) => {
     })
     .catch((error) => {
       console.log("select error", error);
-      res.send(error);
+      res.status(404).send(error.message);
     });
 });
 
@@ -24,7 +24,7 @@ router.post("/create_user", (req, res) => {
     })
     .catch((error) => {
       console.log("create error", error);
-      res.send(error);
+      res.status(404).send(error.message);
     });
 });
 
@@ -37,7 +37,7 @@ router.patch("/update_user", (req, res) => {
     })
     .catch((error) => {
       console.log("update error", error);
-      res.send(error);
+      res.status(404).send(error.message);
     });
 });
 
@@ -50,7 +50,7 @@ router.delete("/delete_user", (req, res) => {
     })
     .catch((error) => {
       console.log("delete error", error);
-      res.send(error);
+      res.status(404).send(error.message);
     });
 });
 
