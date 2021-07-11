@@ -9,3 +9,6 @@ Frontend can be found here: https://github.com/mallelapavank/archimydes-challeng
 - Modify `config/config.json` to configure database connection under development section
 - Change the port number if necessary in `/.env` file
 - Run `npm start` to start the project
+
+#### Running tests
+- Run `npm run test`
